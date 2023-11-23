@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html forms</title>
+    <link rel="stylesheet" href="{% static 'css/c3.css' %}">
+</head>
+<body>
+<form>
+	<h1 align="center">Edit Your Details</h1>
+<table align="center">
+    <center><img src="{% static 'images/officestaff.jpg' %}" alt=""></center>
+<tr>  
+	<td><label>username:</label></td>
+	<td><input type="text"./></td>
+</tr>
+<tr>
+	<td><label>password:</label></td>
+	<td><input type="password" name=""></td>
+</tr>
+<tr>
+	<td><label>Fullname:</label></td>
+	<td><input type="text" name=""></td>
+</tr>
+<tr>
+	<td><label>email:</label></td>
+	<td><input type="email" name=""></td>
+</tr>
+<tr>
+	<td><label>Phone number:</label></td>
+	<td><input type="number" name=""></td>
+</tr>
+<tr>
+	<td><label>Address:</label></td>
+    <td><input type="Address" name=""></td>
+</tr>
+<tr>
+	<td>
+		<label>Hotel Branch:</label>
+		<select>
+			<option>..select..</option>
+			<option>mittal chamber</option>
+			<option>abemkar chamber</option>
+			<option>akilarkd chamber</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td><button><a href="{% url 'successful' %}">submit</a></button></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
